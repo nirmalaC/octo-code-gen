@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>java-cucumber-selenium-pom</artifactId>
+  <version>1.0.0</version>
+  <name>Java+Cucumber+Selenium+POM (JUnit5) with Allure</name>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <cucumber.version>7.14.0</cucumber.version>
+<selenium.version>4.23.0</selenium.version>
+    <allure.cucumber.jvm.version>2.24.0</allure.cucumber.jvm.version>
+    <webdrivermanager.version>5.9.2</webdrivermanager.version>
+
+    <!-- Default tag filter; override with -Dcucumber.filter.tags -->
+    <cucumber.filter.tags>@smoke</cucumber.filter.tags>
+  </properties>
+
+  <dependencies>
+    <!-- Cucumber -->
+
+    <!-- JUnit 5 (Jupiter) -->
+
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- WebDriverManager (optional convenience for drivers) -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Allure for Cucumber 7 -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-cucumber7-jvm</artifactId>
+      <version>2.27.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Utils -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.15.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.12</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Cucumber: step/hook annotations live here (io.cucumber.java.*) -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.14.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Cucumber JUnit4 runner -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.14.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit 4 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Allure report plugin -->
+      <plugin>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-maven</artifactId>
+        <version>2.12.0</version>
+      </plugin>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>3.2.5</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+            <configuration>
+              <includes>
+                <include>**/*Runner*.java</include>
+                <include>**/*IT.java</include>
+                <include>**/*Test.java</include>
+              </includes>
+              <systemPropertyVariables>
+                <cucumber.filter.tags>${cucumber.filter.tags}</cucumber.filter.tags>
+              </systemPropertyVariables>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    
+</plugins>
+  </build>
+</project>

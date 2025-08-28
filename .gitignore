@@ -1,0 +1,16 @@
+# Maven
+/target/
+
+# IntelliJ / Eclipse
+/.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Allure
+allure-results/
+allure-report/
+
+# OS
+.DS_Store
