@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends BasePage {
 
@@ -17,7 +20,7 @@ public class LoginPage extends BasePage {
     private final By logoutBtn = By.xpath("//*[@id='submit']");
     private final By octopluBtn = By.xpath("//span[normalize-space()='Octoplus']");
     private final By rewardsCard = By.xpath("//div[@data-testid='offer-card']//a[.//span[normalize-space()='Claimed reward']]");
-    private final By exploreRewards = By.xpath("//a[@class='sc-1bcn1h0-1 fPxMrc']");
+    private final By exploreRewards = By.xpath("//a/span[text()='Explore rewards']");
     private final By rewardsText = By.xpath("//div[@id='barcode-wrapper']//h2[text()='Reward activated!']");
 
 
@@ -78,7 +81,12 @@ public class LoginPage extends BasePage {
     }
 
     public void assertPageText(){
-        String element = driver.findElement(rewardsText).getText();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement heading = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(rewardsText)
+        );
+
+        String element = heading.getText();
         Assert.assertEquals(element, "Reward activated!");
     }
 }
