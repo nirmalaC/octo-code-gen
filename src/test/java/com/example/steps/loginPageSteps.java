@@ -43,4 +43,25 @@ public class loginPageSteps {
     public void iClickOnOctoplusButton() {
         loginPage.clickOctoPlusButton();
     }
+
+    @And("I am on the Rewards page")
+    public void iAmOnTheRewardsPage() {
+        assertTrue("Not on octopus rewards page", loginPage.rewardsPageIsDisplayed());
+    }
+
+    @And("I click on Rewards card")
+    public void
+    iClickOnRewardsCard() {
+       loginPage.clickOnExploreRewards();
+    }
+
+    @And("I click on claimed rewards button")
+    public void iClickOnClaimedRewardsButton() {
+       loginPage.clickOnRewardsCard();
+    }
+
+    @Then("I should see the reward activated text")
+    public void iShouldSeeTheRewardActivatedText() {
+        loginPage.assertPageText();
+    }
 }

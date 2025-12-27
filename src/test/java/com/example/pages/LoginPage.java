@@ -2,9 +2,8 @@ package com.example.pages;
 
 import com.example.support.ConfigReader;
 import com.example.utils.CredentialManager;
-import io.qameta.allure.Step;
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,8 +14,12 @@ public class LoginPage extends BasePage {
     private final By username = By.id("id_auth-username");
     private final By password = By.id("id_auth-password");
     private final By submitBtn = By.id("submit-button");
-    private final By logoutBtn     = By.xpath("//*[@id='submit']");
+    private final By logoutBtn = By.xpath("//*[@id='submit']");
     private final By octopluBtn = By.xpath("//span[normalize-space()='Octoplus']");
+    private final By rewardsCard = By.xpath("//div[@data-testid='offer-card']//a[.//span[normalize-space()='Claimed reward']]");
+    private final By exploreRewards = By.xpath("//a[@class='sc-1bcn1h0-1 fPxMrc']");
+    private final By rewardsText = By.xpath("//div[@id='barcode-wrapper']//h2[text()='Reward activated!']");
+
 
 
     public LoginPage(WebDriver driver) {
@@ -62,4 +65,21 @@ public class LoginPage extends BasePage {
     }
 
 
+    public boolean rewardsPageIsDisplayed() {
+        return driver.getCurrentUrl().contains("/octoplus");
+    }
+
+    public void clickOnRewardsCard(){
+        click(rewardsCard);
+    }
+
+    public void clickOnExploreRewards(){
+        click(exploreRewards);
+    }
+
+    public void assertPageText(){
+        String element = driver.findElement(rewardsText).getText();
+        Assert.assertEquals(element, "Reward activated!");
+    }
 }
+

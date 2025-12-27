@@ -19,6 +19,10 @@ Feature: code generation in Octopus Energy Website
   Scenario Outline: Check Offers
     When I login with username "<username>"
     And I click on octoplus button
+    And I am on the Rewards page
+    And I click on Rewards card
+    And I click on claimed rewards button
+    Then I should see the reward activated text
 
     Examples:
       | username       |
