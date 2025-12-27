@@ -14,18 +14,20 @@ import java.io.ByteArrayInputStream;
 
 public class TestHooks {
 
-    @Before(order = 0)
+    @Before
     public void setUp(Scenario scenario) {
         String browser = ConfigReader.get("browser");
         boolean headless = Boolean.parseBoolean(ConfigReader.get("headless"));
         DriverFactory.initDriver(browser, headless);
     }
 
-    @After(order = 1)
+
+    @After
     public void tearDown(Scenario scenario) {
         WebDriver driver = DriverFactory.getDriver();
         if (driver != null) {
             if (scenario.isFailed()) {
+                // Captures a screenshot of the current browser state and stores it as a byte array
                 byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
                 Allure.addAttachment("Failure Screenshot", new ByteArrayInputStream(screenshot));
             }

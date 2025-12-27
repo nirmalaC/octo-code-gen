@@ -1,6 +1,7 @@
 package com.example.pages;
 
 import com.example.support.ConfigReader;
+import com.example.utils.CredentialManager;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,14 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class LoginPage extends BasePage {
 
     private final String baseUrl = ConfigReader.get("baseUrl");
-    private final By username = By.id("userName");
-    private final By password = By.id("password");
-    private final By flash = By.id("flash");
-    private final By loginBtn = By.xpath("//*[@id='login']");
-    private final By errorMsg = By.id("name");
-    private final By newUser  = By.id("newUser");
+    private final By username = By.id("id_auth-username");
+    private final By password = By.id("id_auth-password");
+    private final By submitBtn = By.id("submit-button");
     private final By logoutBtn     = By.xpath("//*[@id='submit']");
-    private final By usernameValue = By.id("userName-value");
+    private final By octopluBtn = By.xpath("//span[normalize-space()='Octoplus']");
+
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -41,31 +40,26 @@ public class LoginPage extends BasePage {
         type(password, pass);
     }
 
-    public void clickLogin() {
-        WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(loginBtn));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
-    }
-
-    public void clickNewUser() {
-        click(newUser);
-    }
-
-    public String displayedUsername() {
-        return textOf(usernameValue);
+    public void clickSubmitButton() {
+        click(submitBtn);
     }
 
     public void logout() {
         click(logoutBtn);
     }
 
+    public void login(String user) {
+        String username = CredentialManager.getUsername(user);
+        String password = CredentialManager.getPassword(user);
 
-    public void login(String user, String pass) {
-        enterUsername(user);
-        enterPassword(pass);
-        clickLogin();
+        enterUsername(username);
+        enterPassword(password);
+        clickSubmitButton();
     }
-    public String error() {
-        return textOf(errorMsg);
+
+    public void clickOctoPlusButton() {
+        click(octopluBtn);
     }
+
 
 }

@@ -1,0 +1,24 @@
+name: Cucumber Selenium Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set secrets as env vars
+        env:
+          SELENIUM_OCTO1_USERNAME: ${{ secrets.SELENIUM_OCTO1_USERNAME }}
+          SELENIUM_OCTO1_PASSWORD: ${{ secrets.SELENIUM_OCTO1_PASSWORD }}
+          SELENIUM_OCTO2_USERNAME: ${{ secrets.SELENIUM_OCTO2_USERNAME }}
+          SELENIUM_OCTO2_PASSWORD: ${{ secrets.SELENIUM_OCTO2_PASSWORD }}
+        run: mvn test

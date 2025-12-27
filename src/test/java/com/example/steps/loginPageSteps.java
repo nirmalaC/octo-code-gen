@@ -2,6 +2,8 @@ package com.example.steps;
 
 import com.example.pages.LoginPage;
 import com.example.support.DriverFactory;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,9 +22,9 @@ public class loginPageSteps {
         assertTrue("Not on loginPage page", loginPage.isAt());
     }
 
-    @When("I login with username {string} and password {string}")
-    public void i_loginPage_with_username_and_password(String user, String pass) {
-        loginPage.login(user, pass);
+    @When("I login with username {string}")
+    public void i_loginPage_with_username_and_password(String user) {
+        loginPage.login(user);
     }
 
     @Then("I should land on the profile page")
@@ -30,24 +32,15 @@ public class loginPageSteps {
         assertTrue("Not on profile page", loginPage.isAt());
     }
 
-    @Then("I should see my username on profile")
-    public void i_should_see_my_username_on_profile() {
-        assertEquals("Username mismatch", "Config.username()", loginPage.displayedUsername());
-    }
-
-    @Then("I should see login error {string}")
-    public void i_should_see_loginPage_error(String expected) {
-        assertEquals(expected, loginPage.error());
-    }
 
     @When("I log out")
     public void i_log_out() {
         loginPage.logout();
     }
 
-    @Then("I should be back on the login page")
-    public void i_should_be_back_on_loginPage_page() {
-        assertTrue(loginPage.isAt());
-    }
 
+    @And("I click on octoplus button")
+    public void iClickOnOctoplusButton() {
+        loginPage.clickOctoPlusButton();
+    }
 }

@@ -1,26 +1,25 @@
 @smoke @login
-Feature: Login to DemoQA Book Store
+Feature: code generation in Octopus Energy Website
 
   Background:
     Given I am on the DemoQA login page
 
   @positive @LoginSuccess
   Scenario Outline: Successful login with configured credentials
-    When I login with username "<username>" and password "<password>"
+    When I login with username "<username>"
     And I log out
     Then I should be back on the login page
 
     Examples:
-      | username | password  |
-      | Nimu0123 | Nimu0123! |
+      | username       |
+      | SELENIUM_OCTO1 |
 
 
-  @negative @LoginFailure
-  Scenario Outline: Invalid login shows an error
-    When I login with username "<username>" and password "<password>"
-    Then I should see login error "Invalid username or password!"
+  @positive @offers
+  Scenario Outline: Check Offers
+    When I login with username "<username>"
+    And I click on octoplus button
 
     Examples:
-      | username  | password     |
-      | wrongUser | wrongPass    |
-      | wrongUser | Password123! |
+      | username       |
+      | SELENIUM_OCTO1 |
