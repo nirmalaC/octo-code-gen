@@ -20,10 +20,22 @@ Feature: code generation in Octopus Energy Website
     When I login with username "<username>"
     And I click on octoplus button
     And I am on the Rewards page
-    And I click on Rewards card
+    And I click on Explore Rewards
     And I click on claimed rewards button
     Then I should see the reward activated text
 
     Examples:
       | username       |
       | SELENIUM_OCTO1 |
+
+  @positive @offersCard
+  Scenario Outline: Check Available Rewards
+    When I login with username "<username>"
+    And I click on octoplus button
+    And I am on the Rewards page
+    And I click on Explore Rewards
+    And I click on offers card to reveal offer for if exists "<offerText>"
+
+    Examples:
+      | username       | offerText                         |
+      | SELENIUM_OCTO1 | 2 Super Saver seats for £8 at Vue |

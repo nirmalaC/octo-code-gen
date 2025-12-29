@@ -6,11 +6,14 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
 public abstract class BasePage {
 
+    protected static final Logger logger = LoggerFactory.getLogger(BasePage.class);
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected final Duration timeout;
@@ -32,8 +35,11 @@ public abstract class BasePage {
     @Step("Clicking on element: {locator}")
     protected void click(By locator) {
         try {
+            logger.debug("Attempting to click on element: {}", locator);
             waitForClickable(locator).click();
+            logger.info("Successfully clicked on element: {}", locator);
         } catch (TimeoutException | NoSuchElementException | ElementClickInterceptedException e) {
+            logger.error("Failed to click on element: {}", locator, e);
             throw new FrameworkException("Failed to click on element: " + locator, e);
         }
     }
@@ -41,10 +47,13 @@ public abstract class BasePage {
     @Step("Typing into element: {locator} value: {text}")
     protected void type(By locator, String text) {
         try {
+            logger.debug("Typing text into element: {} with value: {}", locator, text);
             WebElement el = waitForVisible(locator);
             el.clear();
             el.sendKeys(text);
+            logger.info("Successfully typed text into element: {}", locator);
         } catch (TimeoutException | NoSuchElementException e) {
+            logger.error("Failed to type into element: {}", locator, e);
             throw new FrameworkException("Failed to type into element: " + locator, e);
         }
     }
@@ -52,8 +61,12 @@ public abstract class BasePage {
     @Step("Get text from element: {locator}")
     protected String getText(By locator) {
         try {
-            return waitForVisible(locator).getText();
+            logger.debug("Getting text from element: {}", locator);
+            String text = waitForVisible(locator).getText();
+            logger.debug("Retrieved text from element {}: {}", locator, text);
+            return text;
         } catch (TimeoutException | NoSuchElementException e) {
+            logger.error("Failed to get text from element: {}", locator, e);
             throw new FrameworkException("Failed to get text from element: " + locator, e);
         }
     }

@@ -1,0 +1,75 @@
+2025-12-29 20:53:08.079 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-29 20:53:08.099 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-29 20:53:08.099 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-29 20:53:08.100 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-29 20:53:14.211 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-29 20:53:14.323 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-29 20:53:14.341 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-29 20:53:14.387 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-29 20:53:14.407 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-29 20:53:16.810 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-29 20:53:16.828 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-29 20:53:16.833 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-29 20:53:16.833 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-29 20:53:16.834 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
+2025-12-29 20:53:17.224 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-29 20:53:17.224 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-29 20:53:17.447 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-29 20:53:17.449 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-29 20:53:23.368 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-29 20:53:23.370 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-29 20:53:23.370 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-29 20:53:23.370 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-29 20:53:24.881 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-29 20:53:26.132 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: A hot or cold drink on us
+2025-12-29 20:53:26.132 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: A hot or cold drink on us
+2025-12-29 20:53:26.531 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Claimed reward
+2025-12-29 20:53:26.531 [main] INFO  com.example.pages.LoginPage - Offer is already claimed, clicking on claimed reward link
+2025-12-29 20:53:26.531 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), 'A hot or cold drink on us')]]//a[.//span[normalize-space()='Claimed reward']]
+2025-12-29 20:53:26.883 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), 'A hot or cold drink on us')]]//a[.//span[normalize-space()='Claimed reward']]
+2025-12-29 20:53:26.885 [main] INFO  com.example.pages.LoginPage - Clicked on Claimed Rewards Successfully
+2025-12-29 20:53:26.885 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: A hot or cold drink on us
+2025-12-29 20:53:26.887 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-29 20:53:26.893 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
+2025-12-29 20:53:26.893 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-29 20:53:28.728 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-29 20:53:28.728 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-29 20:54:30.769 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-29 20:54:30.777 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-29 20:54:30.778 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-29 20:54:30.778 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-29 20:54:35.093 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-29 20:54:35.196 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-29 20:54:35.197 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-29 20:54:35.203 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-29 20:54:35.220 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-29 20:54:35.419 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-29 20:54:37.549 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-29 20:54:37.553 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-29 20:54:37.553 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-29 20:54:37.553 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
+2025-12-29 20:54:37.946 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-29 20:54:37.946 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-29 20:54:38.189 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-29 20:54:38.189 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-29 20:54:44.638 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-29 20:54:44.638 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-29 20:54:44.638 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-29 20:54:44.638 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-29 20:54:45.345 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-29 20:54:46.675 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: 2 Super Saver seats for £8 at Vue
+2025-12-29 20:54:46.677 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: 2 Super Saver seats for £8 at Vue
+2025-12-29 20:54:47.133 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Reveal offer
+2025-12-29 20:54:47.133 [main] INFO  com.example.pages.LoginPage - Offer needs to be revealed, clicking on reveal offer
+2025-12-29 20:54:47.133 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Reveal offer']]
+2025-12-29 20:54:47.594 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Reveal offer']]
+2025-12-29 20:54:47.594 [main] INFO  com.example.pages.LoginPage - Clicking on activate offer button
+2025-12-29 20:54:47.596 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //button[.//span[normalize-space(text())='Activate offer']]
+2025-12-29 20:54:48.266 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //button[.//span[normalize-space(text())='Activate offer']]
+2025-12-29 20:54:49.764 [main] INFO  com.example.pages.LoginPage - Clicked on Reveal Offers Successfully
+2025-12-29 20:54:49.764 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: 2 Super Saver seats for £8 at Vue
+2025-12-29 20:54:49.767 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-29 20:54:49.771 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
+2025-12-29 20:54:49.771 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-29 20:54:50.779 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-29 20:54:50.779 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
