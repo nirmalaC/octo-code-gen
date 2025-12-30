@@ -1,75 +1,685 @@
-2025-12-29 20:53:08.079 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
-2025-12-29 20:53:08.099 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
-2025-12-29 20:53:08.099 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
-2025-12-29 20:53:08.100 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
-2025-12-29 20:53:14.211 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
-2025-12-29 20:53:14.323 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
-2025-12-29 20:53:14.341 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
-2025-12-29 20:53:14.387 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
-2025-12-29 20:53:14.407 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
-2025-12-29 20:53:16.810 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
-2025-12-29 20:53:16.828 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
-2025-12-29 20:53:16.833 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
-2025-12-29 20:53:16.833 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
-2025-12-29 20:53:16.834 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
-2025-12-29 20:53:17.224 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
-2025-12-29 20:53:17.224 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
-2025-12-29 20:53:17.447 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
-2025-12-29 20:53:17.449 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
-2025-12-29 20:53:23.368 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
-2025-12-29 20:53:23.370 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
-2025-12-29 20:53:23.370 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
-2025-12-29 20:53:23.370 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
-2025-12-29 20:53:24.881 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
-2025-12-29 20:53:26.132 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: A hot or cold drink on us
-2025-12-29 20:53:26.132 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: A hot or cold drink on us
-2025-12-29 20:53:26.531 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Claimed reward
-2025-12-29 20:53:26.531 [main] INFO  com.example.pages.LoginPage - Offer is already claimed, clicking on claimed reward link
-2025-12-29 20:53:26.531 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), 'A hot or cold drink on us')]]//a[.//span[normalize-space()='Claimed reward']]
-2025-12-29 20:53:26.883 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), 'A hot or cold drink on us')]]//a[.//span[normalize-space()='Claimed reward']]
-2025-12-29 20:53:26.885 [main] INFO  com.example.pages.LoginPage - Clicked on Claimed Rewards Successfully
-2025-12-29 20:53:26.885 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: A hot or cold drink on us
-2025-12-29 20:53:26.887 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
-2025-12-29 20:53:26.893 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
-2025-12-29 20:53:26.893 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
-2025-12-29 20:53:28.728 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
-2025-12-29 20:53:28.728 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
-2025-12-29 20:54:30.769 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
-2025-12-29 20:54:30.777 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
-2025-12-29 20:54:30.778 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
-2025-12-29 20:54:30.778 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
-2025-12-29 20:54:35.093 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
-2025-12-29 20:54:35.196 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
-2025-12-29 20:54:35.197 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
-2025-12-29 20:54:35.203 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
-2025-12-29 20:54:35.220 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
-2025-12-29 20:54:35.419 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
-2025-12-29 20:54:37.549 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
-2025-12-29 20:54:37.553 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
-2025-12-29 20:54:37.553 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
-2025-12-29 20:54:37.553 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
-2025-12-29 20:54:37.946 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
-2025-12-29 20:54:37.946 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
-2025-12-29 20:54:38.189 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
-2025-12-29 20:54:38.189 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
-2025-12-29 20:54:44.638 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
-2025-12-29 20:54:44.638 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
-2025-12-29 20:54:44.638 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
-2025-12-29 20:54:44.638 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
-2025-12-29 20:54:45.345 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
-2025-12-29 20:54:46.675 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: 2 Super Saver seats for £8 at Vue
-2025-12-29 20:54:46.677 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: 2 Super Saver seats for £8 at Vue
-2025-12-29 20:54:47.133 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Reveal offer
-2025-12-29 20:54:47.133 [main] INFO  com.example.pages.LoginPage - Offer needs to be revealed, clicking on reveal offer
-2025-12-29 20:54:47.133 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Reveal offer']]
-2025-12-29 20:54:47.594 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Reveal offer']]
-2025-12-29 20:54:47.594 [main] INFO  com.example.pages.LoginPage - Clicking on activate offer button
-2025-12-29 20:54:47.596 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //button[.//span[normalize-space(text())='Activate offer']]
-2025-12-29 20:54:48.266 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //button[.//span[normalize-space(text())='Activate offer']]
-2025-12-29 20:54:49.764 [main] INFO  com.example.pages.LoginPage - Clicked on Reveal Offers Successfully
-2025-12-29 20:54:49.764 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: 2 Super Saver seats for £8 at Vue
-2025-12-29 20:54:49.767 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
-2025-12-29 20:54:49.771 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
-2025-12-29 20:54:49.771 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
-2025-12-29 20:54:50.779 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
-2025-12-29 20:54:50.779 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 09:17:16.119 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 09:17:16.150 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 09:17:16.151 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 09:17:16.151 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 09:17:20.825 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 09:17:20.932 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 09:17:20.935 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 09:17:20.954 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 09:17:20.970 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 09:17:22.977 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 09:17:22.992 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 09:17:22.996 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 09:17:22.996 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 09:17:22.997 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
+2025-12-30 09:17:23.270 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 09:17:23.270 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 09:17:23.408 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 09:17:23.408 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 09:17:23.581 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 09:17:23.581 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 09:17:23.582 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 09:17:23.582 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 09:17:29.364 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 09:17:31.755 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: 2 Super Saver seats for £8 at Vue
+2025-12-30 09:17:31.756 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: 2 Super Saver seats for £8 at Vue
+2025-12-30 09:17:32.337 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Claimed reward
+2025-12-30 09:17:32.338 [main] INFO  com.example.pages.LoginPage - Offer is already claimed, clicking on claimed reward link
+2025-12-30 09:17:32.338 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Claimed reward']]
+2025-12-30 09:17:32.880 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Claimed reward']]
+2025-12-30 09:17:32.881 [main] INFO  com.example.pages.LoginPage - Clicked on Claimed Rewards Successfully
+2025-12-30 09:17:32.882 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: 2 Super Saver seats for £8 at Vue
+2025-12-30 09:17:32.885 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 09:17:32.893 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
+2025-12-30 09:17:32.897 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 09:17:33.756 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 09:17:33.756 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 09:29:02.153 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 09:29:02.171 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 09:29:02.173 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 09:29:02.177 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 09:29:05.339 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 09:29:05.394 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 09:29:05.395 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 09:29:05.421 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 09:29:05.444 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 09:29:07.444 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 09:29:07.459 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 09:29:07.487 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 09:29:07.488 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 09:29:07.518 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 09:29:07.521 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 09:29:07.749 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 09:29:07.749 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 09:29:08.841 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 09:29:08.841 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 09:32:06.863 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 09:32:06.873 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 09:32:06.877 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 09:32:06.877 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 09:32:09.362 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 09:32:09.484 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 09:32:09.485 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 09:32:09.510 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 09:32:09.535 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 09:32:11.441 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 09:32:11.501 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 09:32:11.515 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 09:32:11.516 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 09:32:11.519 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 09:32:11.725 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 09:32:11.725 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 09:32:11.840 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 09:32:11.840 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 09:32:12.107 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 09:32:12.107 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 09:32:12.107 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 09:32:12.109 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 09:32:32.587 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55375}, goog:processID: 22356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55375/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b4051a943892e77e476699f130c8e59
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 09:32:32.623 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 09:32:32.625 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 09:32:32.808 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 09:32:32.808 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 09:32:33.449 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 09:32:33.449 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 09:33:03.987 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 09:33:03.996 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 09:33:03.999 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 09:33:04.000 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 09:33:06.537 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 09:33:06.627 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 09:33:06.628 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 09:33:06.654 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 09:33:06.673 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 09:33:08.463 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 09:33:08.481 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 09:33:08.518 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 09:33:08.519 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 09:33:08.526 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 09:33:08.762 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 09:33:08.763 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 09:33:08.888 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 09:33:08.889 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 09:33:09.181 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 09:33:09.182 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 09:33:09.182 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 09:33:09.183 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 09:33:29.683 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58263}, goog:processID: 27728, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58263/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91afb4dea76855c157220b7e82ec8551
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 09:33:29.692 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 09:33:29.717 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 09:33:29.926 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 09:33:29.926 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 09:33:31.037 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 09:33:31.037 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 09:34:42.923 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 09:34:42.937 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 09:34:42.939 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 09:34:42.939 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 09:34:45.665 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 09:34:45.823 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 09:34:45.824 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 09:34:45.854 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 09:34:45.891 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 09:34:47.682 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 09:34:47.699 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 09:34:47.707 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 09:34:47.708 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 09:34:47.715 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 09:34:48.084 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 09:34:48.084 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 09:34:48.217 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 09:34:48.217 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 09:34:48.503 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 09:34:48.503 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 09:34:48.505 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 09:34:48.507 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 09:35:08.762 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59840}, goog:processID: 20180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59840/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 302da3bc15669eca309f2ae6567eeb04
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 09:35:08.806 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 09:35:08.807 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 09:35:08.963 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 09:35:08.963 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 09:35:09.868 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 09:35:09.869 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 10:39:21.925 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 10:39:21.931 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 10:39:21.935 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 10:39:21.935 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 10:39:26.246 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 10:39:26.312 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 10:39:26.312 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 10:39:26.336 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 10:39:26.356 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 10:39:28.046 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 10:39:28.056 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 10:39:28.065 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 10:39:28.065 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 10:39:28.071 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 10:39:28.252 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 10:39:28.254 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 10:39:28.367 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 10:39:28.367 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 10:39:28.472 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 10:39:28.473 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 10:39:28.473 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 10:39:28.474 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 10:39:48.829 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59714}, goog:processID: 20152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59714/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c0fe5baffc75425b766c1bc70b9683b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 10:39:48.852 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 10:39:48.852 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 10:39:49.081 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 10:39:49.084 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 10:39:49.808 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 10:39:49.808 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 10:41:02.142 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 10:41:02.173 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 10:41:02.183 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 10:41:02.184 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 10:41:05.199 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 10:41:05.280 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 10:41:05.280 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 10:41:05.313 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 10:41:05.329 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 10:41:07.386 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 10:41:07.403 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 10:41:07.414 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 10:41:07.415 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 10:41:07.419 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 10:41:07.700 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 10:41:07.700 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 10:41:07.839 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 10:41:07.839 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 10:41:08.180 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 10:41:08.181 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 10:41:08.182 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 10:41:08.188 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 10:41:28.648 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53205}, goog:processID: 18948, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53205/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7e449ed7f50010a7690f2e0ac3b1454
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 10:41:28.699 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 10:41:28.700 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 10:41:28.863 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 10:41:28.864 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 10:41:29.249 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 10:41:29.249 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2025-12-30 10:56:18.802 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2025-12-30 10:56:18.810 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2025-12-30 10:56:18.813 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2025-12-30 10:56:18.813 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2025-12-30 10:56:21.767 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2025-12-30 10:56:21.830 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2025-12-30 10:56:21.830 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2025-12-30 10:56:21.866 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2025-12-30 10:56:21.883 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2025-12-30 10:56:23.447 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2025-12-30 10:56:23.464 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2025-12-30 10:56:23.478 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2025-12-30 10:56:23.479 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2025-12-30 10:56:23.481 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chalki@gmail.com
+2025-12-30 10:56:23.687 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2025-12-30 10:56:23.687 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2025-12-30 10:56:23.799 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2025-12-30 10:56:23.799 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2025-12-30 10:56:23.913 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2025-12-30 10:56:23.914 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2025-12-30 10:56:23.914 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2025-12-30 10:56:23.916 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2025-12-30 10:56:44.003 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[normalize-space()='Octoplus']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[normalize-space()='Octoplus'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52643}, goog:processID: 22508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52643/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0ab905533da44912a217eaf8e18fd9a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:32)
+	at com.example.pages.BasePage.click(BasePage.java:39)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:77)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-12-30 10:56:44.033 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2025-12-30 10:56:44.035 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2025-12-30 10:56:44.183 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2025-12-30 10:56:44.183 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2025-12-30 10:56:44.637 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2025-12-30 10:56:44.638 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards

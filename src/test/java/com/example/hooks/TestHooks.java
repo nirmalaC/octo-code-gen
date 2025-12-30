@@ -38,7 +38,7 @@ public class TestHooks {
                 logger.error("Scenario failed: {}. Capturing screenshot", scenario.getName());
                 // Captures a screenshot of the current browser state and stores it as a byte array
                 byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                Allure.addAttachment("Failure Screenshot", new ByteArrayInputStream(screenshot));
+                Allure.addAttachment("Failure Screenshot", "image/png", new ByteArrayInputStream(screenshot), ".png");
                 logger.info("Screenshot captured and attached to Allure report");
             } else {
                 logger.info("Scenario passed: {}", scenario.getName());
