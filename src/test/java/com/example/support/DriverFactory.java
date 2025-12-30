@@ -21,6 +21,7 @@ public class DriverFactory {
     public static void initDriver(String browser, boolean headless) {
         logger.info("Initializing WebDriver - Browser: {}, Headless: {}", browser, headless);
         WebDriver driver;
+        // Interface-based: WebDriver interface with multiple implementations
         switch (browser.toLowerCase()) {
             case "firefox":
                 logger.debug("Setting up Firefox driver");

@@ -2,6 +2,8 @@ package com.example.utils;
 
 public class CredentialManager {
 
+
+   // Purpose: Utility methods and shared state without instantiation.
     public static String getUsername(String userType) {
         return getEnv(userType + "_USERNAME");
     }

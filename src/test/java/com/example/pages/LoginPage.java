@@ -12,9 +12,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
-
+// Inheritance example as it extends basePage
+// Benefits: Reuses common methods (click(), type(), getText()) and inherits driver, wait, and timeout.
 public class LoginPage extends BasePage {
 
+    // Encapsulation : Private fields and controlled access only accessible internally within the class
     private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
     private final String baseUrl = ConfigReader.get("baseUrl");

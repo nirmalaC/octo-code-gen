@@ -11,8 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
+// BasePage is abstract and defines common page behavior
+//Purpose: Hides implementation details and provides a common interface for page objects.
 public abstract class BasePage {
 
+    // Encapsulation : Private fields and controlled access only subclasses can access them
     protected static final Logger logger = LoggerFactory.getLogger(BasePage.class);
     protected WebDriver driver;
     protected WebDriverWait wait;
