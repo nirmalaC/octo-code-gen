@@ -62,16 +62,6 @@ public class loginPageSteps {
        loginPage.clickOnExploreRewards();
     }
 
-    @And("I click on claimed rewards button")
-    public void iClickOnClaimedRewardsButton() {
-       loginPage.clickOnRewardsCard();
-    }
-
-    @Then("I should see the reward activated text")
-    public void iShouldSeeTheRewardActivatedText() {
-        loginPage.assertPageText();
-    }
-
     @And("I click on offers card to reveal offer for if exists {string}")
     public void iClickOnOffersCardToRevealOffer(String offerText) {
         logger.info("Executing step: Click on offers card to reveal offer for: {}", offerText);

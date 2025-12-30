@@ -23,7 +23,6 @@ public class LoginPage extends BasePage {
     private final By submitBtn = By.id("submit-button");
     private final By logoutBtn = By.xpath("//*[@id='submit']");
     private final By octopluBtn = By.xpath("//span[normalize-space()='Octoplus']");
-    private final By claimrewards = By.xpath("//div[@data-testid='offer-card'][.//h3[normalize-space()='Forest e-bikes, 30 minutes free - subject to availability.']]//a[contains(@href,'/octoplus/partner/rewards/')and .//span[normalize-space()='Claimed reward']]");
     private final By exploreRewards = By.xpath("//a[contains(@href,'/octoplus/partner/offers') and .//span[normalize-space(text())='Explore rewards']]");
     private final By rewardsText = By.xpath("//div[@id='barcode-wrapper']//h2[text()='Reward activated!']");
     private final By activateOffers = By.xpath("//button[.//span[normalize-space(text())='Activate offer']]");
@@ -83,10 +82,6 @@ public class LoginPage extends BasePage {
         return driver.getCurrentUrl().contains("/octoplus");
     }
 
-    public void clickOnRewardsCard(){
-        click(claimrewards);
-    }
-
     public void clickOnExploreRewards(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(exploreRewards));
@@ -101,11 +96,6 @@ public class LoginPage extends BasePage {
 
         String element = heading.getText();
         Assert.assertEquals(element, "Reward activated!");
-    }
-
-    public void clickOnOfferCard(String offerText){
-        By offerCard = By.xpath("//div[@data-testid='offer-card'][.//h3[contains(normalize-space(text()), '" + offerText + "')]]//a[.//span[normalize-space(text())='Reveal offer']]");
-        click(offerCard);
     }
 
     public void clickOnOfferCardToRevealCode(String offerText){
