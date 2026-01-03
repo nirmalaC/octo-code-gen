@@ -44,11 +44,11 @@ public class ConfigReader {
     private static String resolveEnvVars(String value) {
         Matcher matcher = ENV_VAR_PATTERN.matcher(value);
         StringBuffer result = new StringBuffer();
-        
+
         while (matcher.find()) {
             String envVarName = matcher.group(1);
             String envVarValue = System.getenv(envVarName);
-            
+
             if (envVarValue != null) {
                 matcher.appendReplacement(result, Matcher.quoteReplacement(envVarValue));
             } else {
@@ -70,7 +70,7 @@ public class ConfigReader {
         }
         return value;
     }
-    
+
     public static String get(String key, String defaultValue) {
         String value = props.getProperty(key, defaultValue);
         // Also check for runtime environment variable resolution
