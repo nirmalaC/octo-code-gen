@@ -1,6 +1,7 @@
 package com.example.support;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -51,11 +52,14 @@ public class DriverFactory {
                 co.addArguments("--disable-dev-shm-usage");     // avoids /dev/shm crash
                 co.addArguments("--disable-gpu");               // harmless on linux
                 co.addArguments("--window-size=1920,1080");
+                co.addArguments("--force-device-scale-factor=1");
+                co.addArguments("--high-dpi-support=1");
                 driver = new ChromeDriver(co);
                 logger.info("Chrome driver initialized successfully");
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-        driver.manage().window().maximize();
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+//        driver.manage().window().maximize();
         tlDriver.set(driver);
         logger.info("WebDriver setup completed and stored in ThreadLocal");
     }
