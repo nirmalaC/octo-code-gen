@@ -21,4 +21,5 @@ jobs:
           SELENIUM_OCTO1_PASSWORD: ${{ secrets.SELENIUM_OCTO1_PASSWORD }}
           SELENIUM_OCTO2_USERNAME: ${{ secrets.SELENIUM_OCTO2_USERNAME }}
           SELENIUM_OCTO2_PASSWORD: ${{ secrets.SELENIUM_OCTO2_PASSWORD }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         run: mvn test
