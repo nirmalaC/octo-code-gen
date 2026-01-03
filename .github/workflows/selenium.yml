@@ -25,12 +25,12 @@ jobs:
           SELENIUM_OCTO2_USERNAME: ${{ secrets.SELENIUM_OCTO2_USERNAME }}
           SELENIUM_OCTO2_PASSWORD: ${{ secrets.SELENIUM_OCTO2_PASSWORD }}
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-        run: mvn test
+        run: mvn -q test
 
       # Generate Allure HTML report even if tests fail
       - name: Generate Allure report
         if: always()
-        run: mvn -q allure:report
+        run: mvn -q io.qameta.allure:allure-maven:report
 
       # Upload results + report as artifacts
       - name: Upload Allure results
