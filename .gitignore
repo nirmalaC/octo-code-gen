@@ -10,6 +10,8 @@
 *.log
 logs/
 */test-execution.log
+src/test/resources/config.local.properties
+src/test/resources/config.properties
 
 # Allure
 allure-results/
