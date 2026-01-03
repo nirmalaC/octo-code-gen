@@ -58,8 +58,7 @@ public class DriverFactory {
                 logger.info("Chrome driver initialized successfully");
         }
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-//        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         tlDriver.set(driver);
         logger.info("WebDriver setup completed and stored in ThreadLocal");
     }
