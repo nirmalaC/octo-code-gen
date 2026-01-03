@@ -90,3 +90,47 @@
 2026-01-03 11:27:09.489 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
 2026-01-03 11:27:10.536 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
 2026-01-03 11:27:10.536 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2026-01-03 12:28:52.632 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2026-01-03 12:28:52.649 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2026-01-03 12:28:52.649 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2026-01-03 12:28:52.649 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2026-01-03 12:28:56.205 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2026-01-03 12:28:56.268 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2026-01-03 12:28:56.268 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2026-01-03 12:28:56.281 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2026-01-03 12:28:56.291 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2026-01-03 12:28:58.128 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2026-01-03 12:28:58.142 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2026-01-03 12:28:58.144 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2026-01-03 12:28:58.145 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2026-01-03 12:28:58.145 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
+2026-01-03 12:28:58.336 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2026-01-03 12:28:58.337 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2026-01-03 12:28:58.466 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2026-01-03 12:28:58.467 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2026-01-03 12:29:02.052 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2026-01-03 12:29:02.052 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2026-01-03 12:29:02.052 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2026-01-03 12:29:02.053 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Octoplus']
+2026-01-03 12:29:02.439 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Octoplus']
+2026-01-03 12:29:03.512 [main] INFO  com.example.steps.loginPageSteps - Executing step: Click on offers card to reveal offer for: 2 Super Saver seats for £8 at Vue
+2026-01-03 12:29:03.512 [main] INFO  com.example.pages.LoginPage - Attempting to click on offer card for: 2 Super Saver seats for £8 at Vue
+2026-01-03 12:29:03.802 [main] DEBUG com.example.pages.LoginPage - Found offer card status: Claimed reward
+2026-01-03 12:29:03.802 [main] INFO  com.example.pages.LoginPage - Offer is already claimed, clicking on claimed reward link
+2026-01-03 12:29:03.802 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Claimed reward']]
+2026-01-03 12:29:03.982 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.xpath: //div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '2 Super Saver seats for £8 at Vue')]]//a[.//span[normalize-space()='Claimed reward']]
+2026-01-03 12:29:03.982 [main] INFO  c.e.utils.ScreenshotEmailSender - Taking screenshot...
+2026-01-03 12:29:04.288 [main] INFO  c.e.utils.ScreenshotEmailSender - Screenshot captured: 45350 bytes
+2026-01-03 12:29:04.289 [main] INFO  c.e.utils.ScreenshotEmailSender - Using SendGrid API to send email
+2026-01-03 12:29:04.473 [main] INFO  com.example.utils.ApiEmailSender - Attempting to send email via SendGrid
+2026-01-03 12:29:04.473 [main] DEBUG com.example.utils.ApiEmailSender - From: nirmala.chaliki@gmail.com, To: nirmala.chaliki@outlook.com, Subject: Test Failure Screenshot
+2026-01-03 12:29:05.403 [main] INFO  com.example.utils.ApiEmailSender - SendGrid API Response - Status Code: 202
+2026-01-03 12:29:05.403 [main] INFO  c.e.utils.ScreenshotEmailSender - SendGrid API returned success. Check your inbox and spam folder.
+2026-01-03 12:29:05.403 [main] INFO  c.e.utils.ScreenshotEmailSender - Screenshot sent successfully to: nirmala.chaliki@outlook.com
+2026-01-03 12:29:05.405 [main] INFO  com.example.pages.LoginPage - Clicked on Claimed Rewards Successfully
+2026-01-03 12:29:05.405 [main] INFO  com.example.steps.loginPageSteps - Step completed: Click on offers card for: 2 Super Saver seats for £8 at Vue
+2026-01-03 12:29:05.405 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2026-01-03 12:29:05.406 [main] INFO  com.example.hooks.TestHooks - Scenario passed: Check Available Rewards
+2026-01-03 12:29:05.406 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2026-01-03 12:29:06.169 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2026-01-03 12:29:06.169 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
