@@ -134,3 +134,89 @@
 2026-01-03 12:29:05.406 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
 2026-01-03 12:29:06.169 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
 2026-01-03 12:29:06.169 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
+2026-01-03 14:32:21.932 [main] INFO  com.example.hooks.TestHooks - Setting up test scenario: Check Available Rewards
+2026-01-03 14:32:21.964 [main] DEBUG com.example.hooks.TestHooks - Test configuration - Browser: chrome, Headless: false
+2026-01-03 14:32:21.965 [main] INFO  com.example.support.DriverFactory - Initializing WebDriver - Browser: chrome, Headless: false
+2026-01-03 14:32:21.965 [main] DEBUG com.example.support.DriverFactory - Setting up Chrome driver
+2026-01-03 14:32:25.273 [main] INFO  com.example.support.DriverFactory - Chrome driver initialized successfully
+2026-01-03 14:32:25.312 [main] INFO  com.example.support.DriverFactory - WebDriver setup completed and stored in ThreadLocal
+2026-01-03 14:32:25.312 [main] INFO  com.example.hooks.TestHooks - Test setup completed for scenario: Check Available Rewards
+2026-01-03 14:32:25.315 [main] INFO  com.example.steps.loginPageSteps - Navigating to DemoQA login page
+2026-01-03 14:32:25.317 [main] INFO  com.example.pages.LoginPage - Opening login page: https://octopus.energy//login
+2026-01-03 14:32:27.018 [main] INFO  com.example.pages.LoginPage - Login page opened successfully
+2026-01-03 14:32:27.042 [main] INFO  com.example.steps.loginPageSteps - Successfully navigated to login page
+2026-01-03 14:32:27.046 [main] INFO  com.example.steps.loginPageSteps - Executing login step with username: SELENIUM_OCTO1
+2026-01-03 14:32:27.047 [main] INFO  com.example.pages.LoginPage - Attempting to login with user: SELENIUM_OCTO1
+2026-01-03 14:32:27.047 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-username with value: nirmala.chaliki@gmail.com
+2026-01-03 14:32:27.274 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-username
+2026-01-03 14:32:27.274 [main] DEBUG com.example.pages.BasePage - Typing text into element: By.id: id_auth-password with value: Test12342!
+2026-01-03 14:32:27.402 [main] INFO  com.example.pages.BasePage - Successfully typed text into element: By.id: id_auth-password
+2026-01-03 14:32:27.402 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.id: submit-button
+2026-01-03 14:32:27.517 [main] INFO  com.example.pages.BasePage - Successfully clicked on element: By.id: submit-button
+2026-01-03 14:32:27.519 [main] INFO  com.example.pages.LoginPage - Login completed for user: SELENIUM_OCTO1
+2026-01-03 14:32:27.519 [main] INFO  com.example.steps.loginPageSteps - Login step completed for username: SELENIUM_OCTO1
+2026-01-03 14:32:27.521 [main] DEBUG com.example.pages.BasePage - Attempting to click on element: By.xpath: //span[contains(text(),'Octoplus')]
+2026-01-03 14:33:17.589 [main] ERROR com.example.pages.BasePage - Failed to click on element: By.xpath: //span[contains(text(),'Octoplus')]
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(text(),'Octoplus')] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\enisk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58202}, goog:processID: 10564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58202/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74c03f16faa84b5b129812e489012682
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.pages.BasePage.waitForClickable(BasePage.java:35)
+	at com.example.pages.BasePage.click(BasePage.java:42)
+	at com.example.pages.LoginPage.clickOctoPlusButton(LoginPage.java:81)
+	at com.example.steps.loginPageSteps.iClickOnOctoplusButton(loginPageSteps.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+2026-01-03 14:33:17.611 [main] INFO  com.example.hooks.TestHooks - Tearing down test scenario: Check Available Rewards
+2026-01-03 14:33:17.613 [main] ERROR com.example.hooks.TestHooks - Scenario failed: Check Available Rewards. Capturing screenshot
+2026-01-03 14:33:18.071 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2026-01-03 14:33:18.077 [main] INFO  com.example.hooks.TestHooks - Screenshot captured and attached to Allure report
+2026-01-03 14:33:18.077 [main] INFO  com.example.support.DriverFactory - Quitting WebDriver
+2026-01-03 14:33:18.612 [main] INFO  com.example.support.DriverFactory - WebDriver quit successfully and removed from ThreadLocal
+2026-01-03 14:33:18.612 [main] INFO  com.example.hooks.TestHooks - Test teardown completed for scenario: Check Available Rewards
