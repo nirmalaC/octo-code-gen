@@ -17,4 +17,3 @@ allure-report/
 
 # OS
 .DS_Store
-src/test/resources/config.local.properties
