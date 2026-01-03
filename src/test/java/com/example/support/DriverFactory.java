@@ -44,9 +44,9 @@ public class DriverFactory {
                 logger.debug("Setting up Chrome driver");
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions co = new ChromeOptions();
-//                if (headless) co.addArguments("--headless=new");
+                if (headless) co.addArguments("--headless=new");
                 co.addArguments("--remote-allow-origins=*");
-//                co.addArguments("--headless=new");              // or "--headless" if older chrome
+                co.addArguments("--headless=new");              // or "--headless" if older chrome
                 co.addArguments("--no-sandbox");                // required in many CI runners
                 co.addArguments("--disable-dev-shm-usage");     // avoids /dev/shm crash
                 co.addArguments("--disable-gpu");               // harmless on linux
