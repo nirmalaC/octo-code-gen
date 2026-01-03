@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
     private final By password = By.id("id_auth-password");
     private final By submitBtn = By.id("submit-button");
     private final By logoutBtn = By.xpath("//*[@id='submit']");
-    private final By octopluBtn = By.xpath("//span[normalize-space()='Octoplus']");
+    private final By octopluBtn = By.xpath("//span[contains(text(),'Octoplus')]");
     private final By exploreRewards = By.xpath("//a[contains(@href,'/octoplus/partner/offers') and .//span[normalize-space(text())='Explore rewards']]");
     private final By rewardsText = By.xpath("//div[@id='barcode-wrapper']//h2[text()='Reward activated!']");
     private final By activateOffers = By.xpath("//button[.//span[normalize-space(text())='Activate offer']]");
