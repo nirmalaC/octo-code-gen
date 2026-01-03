@@ -9,6 +9,7 @@
 .settings/
 *.log
 logs/
+*/test-execution.log
 
 # Allure
 allure-results/

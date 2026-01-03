@@ -2,6 +2,7 @@ package com.example.pages;
 
 import com.example.support.ConfigReader;
 import com.example.utils.CredentialManager;
+import com.example.utils.ScreenshotEmailSender;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
+
 // Inheritance example as it extends basePage
 // Benefits: Reuses common methods (click(), type(), getText()) and inherits driver, wait, and timeout.
 public class LoginPage extends BasePage {
@@ -116,6 +118,13 @@ public class LoginPage extends BasePage {
             String xpath = String.format(claimedRewardsTemplate, offerText);
             By claimedReward = By.xpath(xpath);
             click(claimedReward);
+
+            // Send screenshot via email
+            ScreenshotEmailSender.takeScreenshotAndSendEmail(
+                    "nirmala.chaliki@outlook.com",
+                    "Test Failure Screenshot",
+                    "Please find the screenshot attached from the failed test."
+            );
             logger.info("Clicked on Claimed Rewards Successfully");
         } else if ("Reveal offer".equals(spanText)){
             logger.info("Offer needs to be revealed, clicking on reveal offer");
