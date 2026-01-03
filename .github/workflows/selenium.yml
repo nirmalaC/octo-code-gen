@@ -1,21 +1,24 @@
 name: Cucumber Selenium Tests
 
-on: [push]
+on:
+  push:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: "17"
+          cache: maven
 
-      - name: Set secrets as env vars
+      - name: Run Maven tests
         env:
           SELENIUM_OCTO1_USERNAME: ${{ secrets.SELENIUM_OCTO1_USERNAME }}
           SELENIUM_OCTO1_PASSWORD: ${{ secrets.SELENIUM_OCTO1_PASSWORD }}
@@ -23,3 +26,23 @@ jobs:
           SELENIUM_OCTO2_PASSWORD: ${{ secrets.SELENIUM_OCTO2_PASSWORD }}
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         run: mvn test
+
+      # Generate Allure HTML report even if tests fail
+      - name: Generate Allure report
+        if: always()
+        run: mvn -q allure:report
+
+      # Upload results + report as artifacts
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: target/allure-results
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/allure-report
