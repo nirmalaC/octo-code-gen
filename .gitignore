@@ -3,12 +3,9 @@
 
 # IntelliJ / Eclipse
 /.idea/
-*.iml
 .project
 .classpath
 .settings/
-*.log
-logs/
 */test-execution.log
 
 # Allure
@@ -17,3 +14,15 @@ allure-report/
 
 # OS
 .DS_Store
+
+# Maven
+target/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
