@@ -1,21 +1,15 @@
 package com.example.utils;
 
-import com.example.support.ConfigReader;
-import com.example.support.DriverFactory;
+import com.example.config.ConfigReader;
+import com.example.core.DriverFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Properties;
 
 /**
  * Utility class to take screenshot and send via email

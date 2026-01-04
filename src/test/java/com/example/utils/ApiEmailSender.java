@@ -1,6 +1,6 @@
 package com.example.utils;
 
-import com.example.support.ConfigReader;
+import com.example.config.ConfigReader;
 import okhttp3.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,6 @@
-package com.example.pages;
+package com.example.core;
 
-import com.example.support.FrameworkException;
-import com.example.support.ConfigReader;
+import com.example.config.ConfigReader;
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -89,7 +88,14 @@ public abstract class BasePage {
     protected String textOf(By locator) {
         return visible(locator).getText();
     }
+
     protected boolean urlContains(String part) {
         return wait.until(ExpectedConditions.urlContains(part));
+    }
+
+    protected void scrollIntoView(By locator) {
+        WebElement element = waitForVisible(locator);
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
     }
 }

@@ -1,7 +1,7 @@
 package com.example.hooks;
 
-import com.example.support.DriverFactory;
-import com.example.support.ConfigReader;
+import com.example.core.DriverFactory;
+import com.example.config.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

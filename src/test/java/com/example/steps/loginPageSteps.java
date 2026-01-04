@@ -1,13 +1,11 @@
 package com.example.steps;
 
 import com.example.pages.LoginPage;
-import com.example.support.DriverFactory;
-import io.cucumber.java.PendingException;
+import com.example.core.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

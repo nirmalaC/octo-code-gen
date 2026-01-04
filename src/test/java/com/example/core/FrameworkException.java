@@ -1,4 +1,4 @@
-package com.example.support;
+package com.example.core;
 
 public class FrameworkException extends RuntimeException {
     public FrameworkException(String message) {

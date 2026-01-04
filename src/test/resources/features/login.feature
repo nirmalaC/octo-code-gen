@@ -13,5 +13,5 @@ Feature: code generation in Octopus Energy Website
     And I click on offers card to reveal offer for if exists "<offerText>"
 
     Examples:
-      | username       | offerText                         |
-      | SELENIUM_OCTO1 | 2 Super Saver seats for £8 at Vue |
+      | username       | offerText                                        |
+      | SELENIUM_OCTO1 | A hot or cold drink on us - any size, every week |

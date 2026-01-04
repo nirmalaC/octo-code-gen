@@ -1,4 +1,4 @@
-package com.example.support;
+package com.example.core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
@@ -47,7 +47,7 @@ public class DriverFactory {
                 ChromeOptions co = new ChromeOptions();
                 if (headless) co.addArguments("--headless=new");
                 co.addArguments("--remote-allow-origins=*");
-                co.addArguments("--headless=new");              // or "--headless" if older chrome
+//                co.addArguments("--headless=new");              // or "--headless" if older chrome
                 co.addArguments("--no-sandbox");                // required in many CI runners
                 co.addArguments("--disable-dev-shm-usage");     // avoids /dev/shm crash
                 co.addArguments("--disable-gpu");               // harmless on linux

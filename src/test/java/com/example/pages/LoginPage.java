@@ -1,6 +1,7 @@
 package com.example.pages;
 
-import com.example.support.ConfigReader;
+import com.example.config.ConfigReader;
+import com.example.core.BasePage;
 import com.example.utils.CredentialManager;
 import com.example.utils.ScreenshotEmailSender;
 import org.junit.Assert;
@@ -28,7 +29,7 @@ public class LoginPage extends BasePage {
     private final By logoutBtn = By.xpath("//*[@id='submit']");
     private final By octopluBtn = By.xpath("//span[contains(text(),'Octoplus')]");
     private final By exploreRewards = By.xpath("//a[contains(@href,'/octoplus/partner/offers') and .//span[normalize-space(text())='Explore rewards']]");
-    private final By rewardsText = By.xpath("//div[@id='barcode-wrapper']//h2[text()='Reward activated!']");
+    private final By rewardsText = By.xpath("//h2[normalize-space()='Reward activated!']");
     private final By activateOffers = By.xpath("//button[.//span[normalize-space(text())='Activate offer']]");
     private final String claimedRewardsTemplate = "//div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '%s')]]//a[.//span[normalize-space()='Claimed reward']]";
     private final String RevealOfferTemplate = "//div[@data-testid='offer-card'][.//h3[contains(normalize-space(), '%s')]]//a[.//span[normalize-space()='Reveal offer']]";
@@ -118,6 +119,7 @@ public class LoginPage extends BasePage {
             String xpath = String.format(claimedRewardsTemplate, offerText);
             By claimedReward = By.xpath(xpath);
             click(claimedReward);
+            scrollIntoView(rewardsText);
 
             // Send screenshot via email
             ScreenshotEmailSender.takeScreenshotAndSendEmail(
@@ -134,6 +136,14 @@ public class LoginPage extends BasePage {
             logger.info("Clicking on activate offer button");
             click(activateOffers);
             assertPageText();
+            scrollIntoView(rewardsText);
+
+            // Send screenshot via email
+            ScreenshotEmailSender.takeScreenshotAndSendEmail(
+                    "nirmala.chaliki@outlook.com",
+                    "Test Failure Screenshot",
+                    "Please find the screenshot attached from the failed test."
+            );
             logger.info("Clicked on Reveal Offers Successfully");
         }
     }
